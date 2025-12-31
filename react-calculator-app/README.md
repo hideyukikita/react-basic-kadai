@@ -1,16 +1,13 @@
-# React + Vite
+# 電卓アプリ
+## 概要
+- Reactを用いて、四則演算（加算、減算、乗算、除算）ができるシンプルな電卓アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 詳細
+- 正しい式を入力してイコールボタンをクリックすると、計算結果が表示される。
+- 計算できるのは 「整数 演算子 整数」 という形式のみ。この形式に合わない入力内容（例：123+、1+*2）でイコールボタンがクリックされた場合、「エラー」と表示される。
+- この電卓アプリには、以下のUI要素を設置。(小数点（.）は不要)
+    - 表示欄(入力内容と計算結果で共通)
+    - 数字ボタン(0 ~ 9)
+    - 演算子ボタン(+, -, *, /)
+    - クリアボタン(C)
+    - イコールボタン(=)

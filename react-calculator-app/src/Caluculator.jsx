@@ -15,7 +15,7 @@ export function Calculator() {
             const result = calculate(display);
             setDisplay(String(result));
         } catch (error) {
-            setDisplay('Error');
+            setDisplay('エラー');
         }   
     }
     // 数字・演算子ボタン押下時アクション

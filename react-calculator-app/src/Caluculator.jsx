@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './App.css';
 
 export function Calculator() {
     // 表示欄の状態管理
@@ -76,10 +77,10 @@ export function Calculator() {
     return (
         <>
             <h2>電卓アプリ</h2>
-            <div>
+            <div className="styles.calculate-container">
                 {display === '' ? '0' : display}
             </div>
-            <div>
+            <div className="styles.button-grid">
                 {buttons.map((btn) => (
                     <button key={btn} onClick={() => handleButtonClick(btn)}>{btn}</button>
                 ))}
